@@ -1,2 +1,3 @@
 # tsw-exam
-Queste delle cartelle con i codici del sito creato
+Queste sono le cartelle con i codici del sito creato
+

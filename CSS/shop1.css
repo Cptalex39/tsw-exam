@@ -1,0 +1,436 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #272727;
+    color: #000;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+img{
+    border-radius: 15px;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    padding: 20px 0;
+    font-size: 13px;
+}
+.logo {
+    width: 50px;
+}
+
+.main-nav ul {
+    display: flex;
+}
+
+.main-nav ul li {
+    padding: 0 10px;
+}
+
+.main-nav ul li a {
+    padding-bottom: 2px;
+}
+
+.main-nav ul li a:hover {
+    border-bottom: 2px solid #fff;
+}
+
+.main-nav ul.main-menu {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.menu-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    z-index: 2;
+    display: none;
+}
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: #0F7C0F;
+    border-radius: 11%;
+    color: #fff;
+    font-size: 15px;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.dark {
+    color: #fff;
+}
+
+.dark .btn {
+    background: #f4f4f4;
+    color: #333;
+}
+
+/* Showcase */
+.showcase {
+    width: 65%;
+    height: 600px;
+    background: url('img/HollowKnightSilksong.jpg') no-repeat center center/cover;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-end;
+    padding-bottom: 330px;
+    padding-right: 600px;
+    margin-bottom: 50px;
+    margin-left: 17.5%;
+}
+
+.showcase h2, .showcase p {
+    margin-bottom: 10px;
+}
+
+.showcase .btn {
+    margin-top: 20px;
+}
+
+.services{
+    text-align: center;
+    margin-top: 70px;
+    color: #fff;
+    font-size: 2.1em;
+    margin-bottom: 20px;
+}
+
+/* Home cards */
+
+.container2{
+    width: auto;
+    align-items: center;
+    background-color: #121212;
+    color: #fff;
+}
+.home-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    padding-left: 14%;
+    padding-right: 14%;
+    position: relative;
+}
+
+.view{
+    margin-bottom: 20px;
+    color: #0F7C0F;
+}
+
+.categorie{
+    text-align: center;
+    margin-top: 25px;
+    color: #fff;
+    font-size: 2.1em;
+}
+
+.home-cards img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.home-cards h3 {
+    margin-bottom: 5px;
+}
+
+.home-cards a {
+    display: inline-block;
+    padding-top: 10px;
+    color: #0F7C0F;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.home-cards a:hover i {
+    margin-left: 10px;
+}
+
+/* Best-Buy */
+
+.container3{
+    width: auto;
+    align-items: center;
+}
+
+.Best-Buy {
+    background: url('img/star-wars-jedi-survivor.jpeg') no-repeat center center/cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.Best-Buy .content {
+    width: 40%;
+    padding-top: 35%;
+    padding-left: 45.6%;
+    position: absolute;
+}
+
+.Best-Buy p, .carbon p {
+    margin: 10px 0 20px;
+}
+
+.btn1{
+    cursor: pointer;
+    border: 0;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: #0F7C0F;
+    border-radius: 11%;
+    color: #fff;
+    font-size: 30px;
+    border: 2px solid;
+}
+
+.The-best{
+    color: #fff;
+    font-size: 2em;
+    font-weight: bold;
+    display: inline;
+    text-align: center;
+    padding-left: 40%;
+    padding-bottom: 10px;
+}
+
+/* Sconti della settimana*/
+
+.discount{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+    margin-bottom: 150px;
+    margin-top: 20px;
+}
+
+.contenitore{
+    overflow: hidden;
+}
+
+.immagine{
+    float: left;
+    width: 400px;
+    padding-left: 6%;
+    padding-top: 30px;
+    border-radius: 0%;
+}
+
+.scritta{
+    float: left;
+    margin-left: 100px;
+    margin-top: 6%;
+    color: #fff;
+    font-weight: 500;
+    font-size: 2.0em;
+    text-decoration: line-through;
+}
+
+.freccia{
+    float: left;
+    margin-left: 100px;
+    margin-top: 6%;
+    color: #fff;
+    font-weight: 500;
+    font-size: 2.0em;
+}
+
+.prezzo{
+    float: left;
+    margin-left: 100px;
+    margin-top: 6%;
+    color: #fff;
+    font-weight: 500;
+    font-size: 2.0em;
+}
+
+.contenitore2{
+    overflow: hidden; 
+    text-align: right;
+    overflow: hidden;
+    
+}
+
+.immagine2{
+    float: right;
+    padding-right: 100px;
+    width: 400px;
+    padding-top: 37px;
+    border-radius: 0%;
+    margin-right: 95px;
+}
+
+.scritta2{
+    float: right;
+    margin-right: 100px;
+    margin-top: 6%;
+    color: #fff;
+    font-weight: 500;
+    font-size: 2.0em;
+    text-decoration: line-through;
+}
+
+.freccia2{
+    float: right;
+    margin-right: 100px;
+    margin-top: 6%;
+    color: #fff;
+    font-weight: 500;
+    font-size: 2.0em;
+}
+
+.prezzo2{
+    float: right;
+    margin-right: 100px;
+    margin-top: 6%;
+    color: #fff;
+    font-weight: 500;
+    font-size: 2.0em;
+}
+
+.Bottone{
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 6%;
+    color: #000;
+    font-weight: 500;
+    font-size: 1.5em;
+    color: #fff;
+    border-radius: 6px;
+    border: 1px solid #fff;
+    background-color: #0F7C0F;
+}
+
+.Bottone:hover{
+    font-size: 2.0em;
+    transition: 0.5s;
+}
+
+/* Footer */
+.footer {
+    background: #121212;
+    color: #616161;
+    font-size: 12px;
+    padding: 20px 0;
+}
+
+.footer-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer div {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.footer ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer li {
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+
+@media(max-width: 700px) {
+    .menu-btn {
+        display: block;
+    }
+    .menu-btn:hover {
+        opacity: 0.5;
+    }
+
+    .main-nav ul.right-menu {
+        margin-right: 50px;
+    }
+
+    .main-nav ul.main-menu li {
+        padding: 10px;
+        border-bottom: #ccc solid 1px;
+        font-size: 14px;
+    }
+
+    .main-nav ul.main-menu li:last-child {
+        border-bottom: 0;
+    }
+
+    .main-nav ul.main-menu.show {
+        transform: translateX(-20px);
+    }
+
+    .home-cards {
+    grid-template-columns: repeat(2, 1fr);
+    }
+
+    .Best-Buy .content p {
+        display: none;
+    }
+
+    .Best-Buy .content h2 {
+        margin-bottom: 20px;
+    }
+
+    .carbon .content {
+        width: 85%;
+    }
+
+    .links .links-inner {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 500px) {
+    .home-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .links .links-inner {
+        grid-template-columns: 1fr;
+    }
+
+    .links .links-inner ul {
+        margin-bottom: 20px;
+    }
+}
